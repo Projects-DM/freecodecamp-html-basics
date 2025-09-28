@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Tabla</h1>
+      <p id="description">Description</p>
+    </header>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Name (required):</label>
+      <input 
+        id="name"
+        name="name" 
+        type="text" 
+        placeholder="Ex. John Doe" 
+        required
+      >
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email (required):</label>
+      <input 
+        id="email" 
+        type="email" 
+        name="email" 
+        placeholder="example@email.com" 
+        required
+      >
+
+      <!-- Number -->
+      <label id="number-label" for="number">Number:</label>
+      <input 
+        id="number" 
+        type="number" 
+        name="number" 
+        placeholder="Enter a number" 
+        min="8"
+        max="12"
+        required
+      >
+
+      <!-- Dropdown -->
+      <label for="dropdown">Select an option:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+
+      <!-- Radios -->
+      <p>Choose one option:</p>
+      <label>
+        <input type="radio" name="choice" value="yes"> Yes
+      </label>
+      <label>
+        <input type="radio" name="choice" value="no"> No
+      </label>
+
+      <!-- Checkboxes -->
+      <p>Select your preferences:</p>
+      <label>
+        <input type="checkbox" name="pref" value="a"> Option A
+      </label>
+      <label>
+        <input type="checkbox" name="pref" value="b"> Option B
+      </label>
+
+      <!-- Textarea -->
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+
+      <!-- Submit -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
